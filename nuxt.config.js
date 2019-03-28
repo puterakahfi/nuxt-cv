@@ -1,7 +1,15 @@
 import pkg from "./package";
 
-export default {
+const routerBase =
+  process.env.DEPLOY_ENV === "GH_PAGES"
+    ? {
+        router: {
+          base: "/<repository-name>/"
+        }
+      }
+    : {};
 
+export default {
   mode: "universal",
 
   router: {
@@ -49,5 +57,6 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  }
+  },
+  routerBase
 };
