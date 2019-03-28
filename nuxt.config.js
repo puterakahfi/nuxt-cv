@@ -1,7 +1,12 @@
 import pkg from "./package";
 
 export default {
+
   mode: "universal",
+
+  router: {
+    base: "/nuxt-cv/"
+  },
 
   /*
    ** Headers of the page
