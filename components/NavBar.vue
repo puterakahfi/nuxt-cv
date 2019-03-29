@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-reverse navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand smooth" href="https://getstisla.com">Stisla</a>
+        <a class="navbar-brand smooth" href="https://getstisla.com">Putera Kahfi</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -77,7 +77,7 @@
               <a href="https://getstisla.com/blog" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="https://getstisla.com/support" class="nav-link">Support</a>
+              <a href="https://getstisla.com/support" class="nav-link">CV</a>
             </li>
             <li class="nav-item">
               <a href="https://getstisla.com/page/contact" class="nav-link">Contact</a>
@@ -97,7 +97,7 @@
                 class="btn btn-round smooth btn-icon icon-left"
                 target="_blank"
               >
-                <i class="fas fa-shopping-cart"></i> Download
+                <i class="fas fa-shopping-cart"></i> Github
               </a>
             </li>
           </ul>

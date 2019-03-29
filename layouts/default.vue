@@ -16,7 +16,9 @@ export default {
   head: {
     script: [
       {
-        src: "/stisla/modules/jquery.min.js"
+        src: "stisla/modules/jquery.min.js",
+        src: "stisla/modules/bootstrap/js/bootstrap.min.js",
+        src: "stisla/js/stisla.js"
       }
     ],
     link: [
