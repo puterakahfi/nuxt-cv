@@ -4,17 +4,13 @@ const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
         router: {
-          base: "/<repository-name>/"
+          base: "/nuxt-cv/"
         }
       }
     : {};
 
 export default {
   mode: "universal",
-
-  router: {
-    base: "/nuxt-cv/"
-  },
 
   /*
    ** Headers of the page
@@ -27,6 +23,7 @@ export default {
       { hid: "description", name: "description", content: pkg.description }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    
   },
 
   /*
