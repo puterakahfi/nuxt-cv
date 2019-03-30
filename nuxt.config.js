@@ -44,7 +44,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/scss/main.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -54,7 +54,25 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    [
+      "nuxt-fontawesome",
+      {
+        component: "fa",
+        imports: [
+          // import whole set
+          {
+            set: "@fortawesome/free-solid-svg-icons",
+            icons: ["fas"]
+          },
+          {
+            set: "@fortawesome/free-brands-svg-icons",
+            icons: ["fab"]
+          }
+        ]
+      }
+    ]
+  ],
 
   /*
    ** Build configuration
