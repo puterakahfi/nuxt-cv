@@ -23,10 +23,6 @@ export default {
       }
     ],
     link: [
-        {
-        rel: "stylesheet",
-        href: "~/assets/css/helpers.scss"
-      },
       {
         rel: "stylesheet",
         href: "stisla/modules/bootstrap/css/bootstrap.min.css"

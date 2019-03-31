@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand smooth" href="https://getstisla.com">Putera Kahfi</a>
+      <nuxt-link to="/" class="navbar-brand smooth h1">Putera Kahfi</nuxt-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -74,30 +74,17 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="https://getstisla.com/blog" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://getstisla.com/support" class="nav-link">CV</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://getstisla.com/page/contact" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item d-lg-none d-md-block">
-            <a
-              href="https://getstisla.com/download"
-              class="nav-link smooth"
-              target="_blank"
-            >Download</a>
+            <a class="nav-link"  target="_blank" href="https://medium.com/@puterakahfi/">Blog</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto align-items-lg-center d-none d-lg-block">
           <li class="ml-lg-3 nav-item">
             <a
               href="https://github.com/puterakahfi"
-              class="btn btn-primary smooth btn-icon icon-left shadowless"
+              class="btn btn-dark smooth btn-icon icon-left shadowless"
               target="_blank"
             >
-              <fa :icon="['fab', 'github']"/>  Github
+              <fa :icon="['fab', 'github']"/>Github
             </a>
           </li>
         </ul>
@@ -108,12 +95,23 @@
 
 
 <style scoped>
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
+}
+
+.navbar .navbar-brand {
+  color: #6c757d;
+  text-transform: inherit;
+  font-weight: 700;
+  padding-top: 12px;
+}
+
 .navbar {
   left: 0;
   right: 0;
-  background-color: transparent;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: white;
   height: auto;
 }
 </style>
