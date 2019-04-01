@@ -5,7 +5,7 @@
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li class="nav-item">
         <a
-          class="nav-link active "
+          class="nav-link active"
           id="pills-home-tab"
           data-toggle="pill"
           href="#pills-home"
@@ -45,7 +45,7 @@
         aria-labelledby="pills-home-tab"
       >
         <embed
-          src="https://wakatime.com/share/@puterakahfi/8a50b45d-089e-47f4-ac0c-8dfdb2b369d8.svg"
+          src="https://wakatime.com/share/@puterakahfi/ccc17d7a-5f37-4a55-9620-56a25b8a6231.svg"
         >
       </div>
       <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -79,9 +79,13 @@ export default {
 </script>
 
 <style scoped>
+.nav-pills .nav-item .nav-link {
+  color: #6c757d;
+}
+
 .nav-pills .nav-item .nav-link.active {
   box-shadow: none;
   color: #fff;
-  background-color: #6777ef;
+  background-color: #000000;
 }
 </style>

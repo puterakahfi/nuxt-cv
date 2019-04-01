@@ -16,63 +16,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ml-lg-3 align-items-lg-center">
-          <li class="nav-item dropdown">
-            <a
-              href="#"
-              data-toggle="dropdown"
-              class="nav-link dropdown-toggle"
-              aria-expanded="false"
-            >Developers</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-title">Getting Started</li>
-              <li>
-                <a
-                  href="https://getstisla.com/getting-started"
-                  class="dropdown-item"
-                >Getting Started</a>
-              </li>
-              <li>
-                <a href="https://getstisla.com/docs" class="dropdown-item">Documentation</a>
-              </li>
-              <li class="dropdown-title">Core</li>
-              <li>
-                <a href="http://demo.getstisla.com/index.html" class="dropdown-item">Dashboard</a>
-              </li>
-              <li>
-                <a
-                  href="http://demo.getstisla.com/layout-transparent.html"
-                  class="dropdown-item"
-                >Layouts</a>
-              </li>
-              <li>
-                <a
-                  href="http://demo.getstisla.com/bootstrap-alert.html"
-                  class="dropdown-item"
-                >Bootstrap</a>
-              </li>
-              <li>
-                <a
-                  href="http://demo.getstisla.com/components-article.html"
-                  class="dropdown-item"
-                >Components</a>
-              </li>
-              <li>
-                <a
-                  href="http://demo.getstisla.com/modules-calendar.html"
-                  class="dropdown-item"
-                >Third-party Libraries</a>
-              </li>
-              <li>
-                <a
-                  href="http://demo.getstisla.com/features-activities.html"
-                  class="dropdown-item"
-                >Pre-built Pages</a>
-              </li>
-              <li>
-                <a href="javascript:;" class="dropdown-item">Skeleton (Progress)</a>
-              </li>
-            </ul>
-          </li>
+  
           <li class="nav-item">
             <a class="nav-link"  target="_blank" href="https://medium.com/@puterakahfi/">Blog</a>
           </li>
@@ -84,7 +28,7 @@
               class="btn btn-dark smooth btn-icon icon-left shadowless"
               target="_blank"
             >
-              <fa :icon="['fab', 'github']"/>Github
+              <fa :icon="['fab', 'github']"/> Github
             </a>
           </li>
         </ul>
