@@ -1,0 +1,39 @@
+@import "helpers.scss";
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+
+body {
+  background: #121327;
+}
+
+.navbar {
+  color: black;
+
+  .navbar-brand {
+    color: black !important;
+  }
+
+  .nav-link {
+    color: black !important;
+  }
+}
+
+.nav {
+  .nav-link.active {
+    color: white !important;
+  }
+  .nav-link {
+    color: black !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: white;
+}
