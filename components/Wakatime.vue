@@ -28,14 +28,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .nav-link {
   color: #6c757d;
 }
 
-.nav-link .active {
-  box-shadow: none;
+.nav-link.active {
+  box-shadow: none !important;
   color: #fff;
-  background-color: #000000;
 }
 </style>
