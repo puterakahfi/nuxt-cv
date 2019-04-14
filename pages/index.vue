@@ -1,7 +1,6 @@
 <template>
-  <div class="hero-mini bg">
     <div class="container">
-      <div class="row align-items-center" id="head">
+      <div class="row" id="head">
         <div class="col-md-6 col-sm-12">
           <h1 class="display-3">Putera Kahfi</h1>
           <p class="lead">Web Developer.</p>
@@ -15,8 +14,8 @@
             </a>
           </div>
         </div>
-        <div class="col-6md-6">
-          <div class="row mt-5">
+        <div class="col-6 md-6">
+          <div class="row">
             <div class="col-12">
               <Wakatime/>
             </div>
@@ -24,7 +23,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
