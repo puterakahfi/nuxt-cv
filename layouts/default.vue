@@ -6,8 +6,6 @@
     </div>
 
     <br>
-    <br>
-    <br>
     <div class="row">
       <nuxt/>
     </div>

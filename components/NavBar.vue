@@ -45,7 +45,6 @@
   color: #6c757d;
   text-transform: inherit;
   font-weight: 700;
-  padding-top: 12px;
 }
 
 .navbar {
@@ -53,5 +52,6 @@
   right: 0;
   background: white;
   height: auto;
+  padding: 12px 0px;
 }
 </style>
