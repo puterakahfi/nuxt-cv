@@ -5,6 +5,7 @@
         <h1 class="display-3">Putera Kahfi</h1>
         <h4>Web Developer.</h4>
         <div class="cta">
+          <br>
           <a
             class="btn btn-lg btn-dark btn-icon icon-right shadowless"
             href="download"
@@ -41,7 +42,7 @@ export default {
 h1.display-3 {
   font-weight: bold;
 }
-h4{
+h4 {
   margin-bottom: 10px;
 }
 </style>
