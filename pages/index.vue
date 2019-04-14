@@ -1,28 +1,28 @@
 <template>
-    <div class="container">
-      <div class="row" id="head">
-        <div class="col-md-6 col-sm-12">
-          <h1 class="display-3">Putera Kahfi</h1>
-          <p class="lead">Web Developer.</p>
-          <div class="cta">
-            <a
-              class="btn btn-lg btn-dark btn-icon icon-right shadowless"
-              href="download"
-              target="_blank"
-            >
-              <fa :icon="['fas', 'download']"/> Download CV in PDF
-            </a>
-          </div>
+  <div class="container">
+    <div class="row" id="head">
+      <div class="col-md-6 col-sm-12">
+        <h1 class="display-3">Putera Kahfi</h1>
+        <h4>Web Developer.</h4>
+        <div class="cta">
+          <a
+            class="btn btn-lg btn-dark btn-icon icon-right shadowless"
+            href="download"
+            target="_blank"
+          >
+            <fa :icon="['fas', 'download']"/> Download CV in PDF
+          </a>
         </div>
-        <div class="col-6 md-6">
-          <div class="row">
-            <div class="col-12">
-              <Wakatime/>
-            </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-12">
+            <Wakatime/>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -38,5 +38,10 @@ export default {
 </script>
 
 <style sccoped>
-
+h1.display-3 {
+  font-weight: bold;
+}
+h4{
+  margin-bottom: 10px;
+}
 </style>

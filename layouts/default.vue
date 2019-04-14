@@ -1,10 +1,10 @@
 <template>
   <div class="container">
+       <Navbar/>
     <div class="row">
-      <Navbar/>
+   
     </div>
-    <br>
-    <br>
+
     <br>
     <br>
     <br>
