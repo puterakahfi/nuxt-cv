@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row" id="head">
-      <div class="col-md-6 col-sm-12 pt-5 mt-5">
+      <div class="col-md-6 col-sm-12 pt-5 mt-5 mb-5">
         <h1 class="display-3">Putera Kahfi</h1>
         <h4>Frontend Developer.</h4>
 
@@ -10,26 +10,36 @@
 
           <a
             href="https://github.com/puterakahfi"
-            class="btn btn-dark smooth btn-icon icon-left shadowless"
+            class="btn btn-default smooth btn-icon icon-left shadowless"
             target="_blank"
           >
-            <fa :icon="['fab', 'github']"/> Github
+            <fa :icon="['fab', 'github']"/>&nbsp;github
           </a>
 
           <a
-            href="https://github.com/puterakahfi"
-            class="btn btn-dark smooth btn-icon icon-left shadowless"
+            href="https://www.linkedin.com/in/putera-kahfi-52663b48"
+            class="btn btn-default smooth btn-icon icon-left shadowless"
             target="_blank"
           >
-            <fa :icon="['fab', 'linkedin']"/> Linkedin
+            <fa :icon="['fab', 'linkedin']"/>&nbsp;linkedin
           </a>
 
           <a
-            class="btn btn-lg btn-primary btn-icon icon-right shadowless disabled"
+            href="https://medium.com/@puterakahfi"
+            class="btn btn-default smooth btn-icon icon-left shadowless"
+            target="_blank"
+          >
+            <fa :icon="['fab', 'medium']"/>&nbsp;blog
+          </a>
+
+          <br>
+          <br>
+          <a
+            class="btn btn-lg btn-primary btn-icon icon-left shadowless disabled"
             href="download"
             target="_blank"
           >
-            <fa :icon="['fas', 'file-pdf']"/> Download CV ( coming soon)
+            <fa :icon="['fas', 'file-pdf']"/>&nbsp;download CV ( coming soon)
           </a>
         </div>
       </div>
@@ -41,17 +51,27 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Skillset</h1>
+        <h6>Web development skillset ( higher is better )</h6>
+        <Skillset/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Logo from "~/components/Logo.vue";
 import Wakatime from "~/components/Wakatime.vue";
+import Skillset from "~/components/Skillset.vue";
 
 export default {
   components: {
     Logo,
-    Wakatime
+    Wakatime,
+    Skillset
   }
 };
 </script>
