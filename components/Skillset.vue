@@ -30,6 +30,7 @@ export default {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      backgroundColor: "#F8CBDF",
       scale: {
         ticks: {
           beginAtZero: false,

@@ -54,10 +54,12 @@
     <br>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6" id="section-skill">
         <h2>Skillset</h2>
+
         <div class="titleunderline"></div>
         <h6>Web development skillset ( higher is better )</h6>
+
         <Skillset/>
       </div>
       <div class="col-md-6">
@@ -196,6 +198,13 @@ h4 {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     cursor: pointer;
+  }
+}
+
+#section-skill {
+  h6 {
+    color: #484040;
+    font-weight: lighter;
   }
 }
 </style>
