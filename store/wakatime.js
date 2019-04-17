@@ -9,7 +9,7 @@ export const state = () => ({
     {
       label: "Language",
       url:
-        "https://wakatime.com/share/@puterakahfi/f45f7d9c-4b91-466d-bdc5-b869303f3951.svg"
+        "https://wakatime.com/share/@puterakahfi/57943941-448a-46b1-a147-e06afcd0fa0a.svg"
     },
     {
       label: "OS",

@@ -2,23 +2,24 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 
+$fontColor: rgb(12, 52, 75);
 body {
   background: white;
+  color: $fontColor;
 }
 
 .navbar {
   color: black;
 
   .navbar-brand {
-    color: black !important;
+    color: $fontColor !important;
+    margin: 3px auto;
   }
 
   .nav-link {
     color: black !important;
   }
 }
-
-
 
 h1,
 h2,
