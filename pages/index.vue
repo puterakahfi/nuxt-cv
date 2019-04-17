@@ -7,11 +7,11 @@
         <div class="cta">
           <br>
           <a
-            class="btn btn-lg btn-primary btn-icon icon-right shadowless"
+            class="btn btn-lg btn-primary btn-icon icon-right shadowless disabled"
             href="download"
             target="_blank"
           >
-            <fa :icon="['fas', 'download']"/> Download CV in PDF
+            <fa :icon="['fas', 'file-pdf']"/> Download CV in PDF ( coming soon)
           </a>
         </div>
       </div>
