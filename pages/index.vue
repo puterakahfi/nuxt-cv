@@ -55,13 +55,13 @@
 
     <div class="row">
       <div class="col-md-6">
-        <h1>Skillset</h1>
+        <h2>Skillset</h2>
         <div class="titleunderline"></div>
         <h6>Web development skillset ( higher is better )</h6>
         <Skillset/>
       </div>
       <div class="col-md-6">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <div class="titleunderline"></div>
         <br>
         <div class="row">
@@ -72,7 +72,7 @@
                 <hr>
                 <a
                   href="https://github.com/puterakahfi/nuxt-cv"
-                  class="btn btn-sm btn-secondary smooth shadowless"
+                  class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
                 >
                   <fa :icon="['fab', 'github']"/>&nbsp;github
@@ -80,7 +80,7 @@
 
                 <a
                   href="https://puterakahfi.github.io/nuxt-cv/"
-                  class="btn btn-sm btn-secondary smooth shadowless"
+                  class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
                 >&nbsp;demo</a>
               </div>
@@ -91,7 +91,20 @@
             <div class="card">
               <div class="card-body">
                 <h4>Project two</h4>This is some text within a card body.
-                <br>
+                <hr>
+                <a
+                  href="https://github.com/puterakahfi/nuxt-cv"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >
+                  <fa :icon="['fab', 'github']"/>&nbsp;github
+                </a>
+
+                <a
+                  href="https://puterakahfi.github.io/nuxt-cv/"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >&nbsp;demo</a>
               </div>
             </div>
           </div>
@@ -100,6 +113,20 @@
             <div class="card">
               <div class="card-body">
                 <h4>Project Three</h4>This is some text within a card body.
+                <hr>
+                <a
+                  href="https://github.com/puterakahfi/nuxt-cv"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >
+                  <fa :icon="['fab', 'github']"/>&nbsp;github
+                </a>
+
+                <a
+                  href="https://puterakahfi.github.io/nuxt-cv/"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >&nbsp;demo</a>
               </div>
             </div>
           </div>
@@ -108,6 +135,20 @@
             <div class="card">
               <div class="card-body">
                 <h4>Project Four</h4>This is some text within a card body.
+                <hr>
+                <a
+                  href="https://github.com/puterakahfi/nuxt-cv"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >
+                  <fa :icon="['fab', 'github']"/>&nbsp;github
+                </a>
+
+                <a
+                  href="https://puterakahfi.github.io/nuxt-cv/"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >&nbsp;demo</a>
               </div>
             </div>
           </div>
@@ -140,12 +181,21 @@ h4 {
 }
 .card {
   border: none;
+  transition: all 0.2s ease-in-out;
 
   hr {
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     border: 0;
     border-top: 1px solid rgba(158, 158, 158, 0.1);
+  }
+
+  &:hover {
+    box-shadow: 0 7px 23px 0 rgba(24, 48, 85, 0.22);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
   }
 }
 </style>
