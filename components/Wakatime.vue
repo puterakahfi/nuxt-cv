@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <b-tabs content-class="mt-3" pills>
       <b-tab
         :title="item.label"

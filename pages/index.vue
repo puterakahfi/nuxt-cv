@@ -6,11 +6,10 @@
         <h4>Frontend Developer.</h4>
 
         <div class="cta">
-          <br>
-
+          
           <a
             href="https://github.com/puterakahfi"
-            class="btn btn-default smooth btn-icon icon-left shadowless"
+            class="btn btn-default smooth  shadowless"
             target="_blank"
           >
             <fa :icon="['fab', 'github']"/>&nbsp;github
@@ -18,7 +17,7 @@
 
           <a
             href="https://www.linkedin.com/in/putera-kahfi-52663b48"
-            class="btn btn-default smooth btn-icon icon-left shadowless"
+            class="btn btn-default smooth  shadowless"
             target="_blank"
           >
             <fa :icon="['fab', 'linkedin']"/>&nbsp;linkedin
@@ -26,7 +25,7 @@
 
           <a
             href="https://medium.com/@puterakahfi"
-            class="btn btn-default smooth btn-icon icon-left shadowless"
+            class="btn btn-default smooth  shadowless"
             target="_blank"
           >
             <fa :icon="['fab', 'medium']"/>&nbsp;blog
