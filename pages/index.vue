@@ -3,15 +3,33 @@
     <div class="row" id="head">
       <div class="col-md-6 col-sm-12 pt-5 mt-5">
         <h1 class="display-3">Putera Kahfi</h1>
-        <h4>Web Developer.</h4>
+        <h4>Frontend Developer.</h4>
+
         <div class="cta">
           <br>
+
+          <a
+            href="https://github.com/puterakahfi"
+            class="btn btn-dark smooth btn-icon icon-left shadowless"
+            target="_blank"
+          >
+            <fa :icon="['fab', 'github']"/> Github
+          </a>
+
+          <a
+            href="https://github.com/puterakahfi"
+            class="btn btn-dark smooth btn-icon icon-left shadowless"
+            target="_blank"
+          >
+            <fa :icon="['fab', 'linkedin']"/> Linkedin
+          </a>
+
           <a
             class="btn btn-lg btn-primary btn-icon icon-right shadowless disabled"
             href="download"
             target="_blank"
           >
-            <fa :icon="['fas', 'file-pdf']"/> Download CV in PDF ( coming soon)
+            <fa :icon="['fas', 'file-pdf']"/> Download CV ( coming soon)
           </a>
         </div>
       </div>
