@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row" id="head">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12 pt-5 mt-5">
         <h1 class="display-3">Putera Kahfi</h1>
         <h4>Web Developer.</h4>
         <div class="cta">
