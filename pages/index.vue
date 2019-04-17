@@ -7,7 +7,7 @@
         <div class="cta">
           <br>
           <a
-            class="btn btn-lg btn-dark btn-icon icon-right shadowless"
+            class="btn btn-lg btn-primary btn-icon icon-right shadowless"
             href="download"
             target="_blank"
           >
