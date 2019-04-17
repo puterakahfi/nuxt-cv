@@ -11,7 +11,7 @@
     "generate": "nuxt generate --no-lock",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build --no-lock",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate --no-lock",
-    "deploy:gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy:gh-pages": "DEPLOY_ENV=GH_PAGES push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.14",
