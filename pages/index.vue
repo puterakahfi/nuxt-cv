@@ -51,12 +51,17 @@
         </div>
       </div>
     </div>
+    <br>
 
     <div class="row">
       <div class="col-md-6">
         <h1>Skillset</h1>
         <h6>Web development skillset ( higher is better )</h6>
         <Skillset/>
+      </div>
+       <div class="col-md-6">
+        <h1>Experiences</h1>
+        <h6>Web development skillset ( higher is better )</h6>
       </div>
     </div>
   </div>
