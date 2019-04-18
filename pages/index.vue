@@ -4,8 +4,10 @@
       <div class="col-md-6 col-sm-12 pt-5 mt-5 mb-5">
         <h1 class="display-3">Putera Kahfi</h1>
 
-        <div class="titleunderline"></div>
-        <h4>Frontend Developer.</h4>
+        <div class="titleunderline mb-3"></div>
+        <h4>
+          <span class>Backend</span> / Frontend Developer.
+        </h4>
 
         <div class="cta">
           <a
@@ -57,14 +59,14 @@
       <div class="col-md-6" id="section-skill">
         <h2>Skillset</h2>
 
-        <div class="titleunderline"></div>
+        <div class="titleunderline mb-3"></div>
         <h6>Web development skillset ( higher is better )</h6>
 
         <Skillset/>
       </div>
       <div class="col-md-6">
         <h2>Projects</h2>
-        <div class="titleunderline"></div>
+        <div class="titleunderline mb-3"></div>
         <br>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-6">
@@ -84,7 +86,7 @@
                   href="https://puterakahfi.github.io/nuxt-cv/"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
-                >&nbsp;demo</a>
+                >&nbsp;link</a>
               </div>
             </div>
           </div>
@@ -92,10 +94,10 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Project two</h4>This is some text within a card body.
+                <h4>Personal Blog</h4>This is some text within a card body.
                 <hr>
                 <a
-                  href="https://github.com/puterakahfi/nuxt-cv"
+                  href="https://github.com/puterakahfi/puterakahfi.github.io"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
                 >
@@ -103,10 +105,10 @@
                 </a>
 
                 <a
-                  href="https://puterakahfi.github.io/nuxt-cv/"
+                  href="https://puterakahfi.github.io"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
-                >&nbsp;demo</a>
+                >&nbsp;link</a>
               </div>
             </div>
           </div>
@@ -114,10 +116,10 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Project Three</h4>This is some text within a card body.
+                <h4>Invest Review</h4>This is some text within a card body.
                 <hr>
                 <a
-                  href="https://github.com/puterakahfi/nuxt-cv"
+                  href="https://github.com/puterakahfi/refview-invest"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
                 >
@@ -125,21 +127,20 @@
                 </a>
 
                 <a
-                  href="https://puterakahfi.github.io/nuxt-cv/"
+                  href="https://puterakahfi.github.io/refview-invest/"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
-                >&nbsp;demo</a>
+                >&nbsp;link</a>
               </div>
             </div>
           </div>
-
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Project Four</h4>This is some text within a card body.
+                <h4>Nuxt Awesome</h4>This is some text within a card body.
                 <hr>
                 <a
-                  href="https://github.com/puterakahfi/nuxt-cv"
+                  href="https://github.com/puterakahfi/nuxt-awesome"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
                 >
@@ -147,16 +148,17 @@
                 </a>
 
                 <a
-                  href="https://puterakahfi.github.io/nuxt-cv/"
+                  href="https://puterakahfi.github.io/nuxt-awesome/"
                   class="btn btn-sm btn-dark smooth shadowless"
                   target="_blank"
-                >&nbsp;demo</a>
+                >&nbsp;link</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -166,17 +168,35 @@ import Wakatime from "~/components/Wakatime.vue";
 import Skillset from "~/components/Skillset.vue";
 
 export default {
+  data: function() {
+    return {
+      activity: ""
+    };
+  },
   components: {
     Logo,
     Wakatime,
     Skillset
+  },
+  async asyncData({ $axios }) {
+    let act  = await $axios.$get(
+      "https://api.github.com/users/puterakahfi/events"
+    );
+
+    return { activity: act };
   }
 };
 </script>
 
 <style lang="scss" scoped>
-h1.display-3 {
-  font-weight: bold;
+.line-through {
+  text-decoration: line-through;
+}
+
+h1 {
+  &.display-3 {
+    font-weight: bold;
+  }
 }
 h4 {
   margin-bottom: 10px;
