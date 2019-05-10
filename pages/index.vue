@@ -31,7 +31,7 @@
             class="btn btn-default smooth shadowless"
             target="_blank"
           >
-            <fa :icon="['fab', 'medium']"/>&nbsp;blog
+            <fa :icon="['fab', 'medium']"/>&nbsp;medium
           </a>
 
           <br>
@@ -70,9 +70,9 @@
         <br>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
+            <div class="card ">
               <div class="card-body">
-                <h4>Personal CV</h4>This is some text within a card body.
+                <h4>Personal CV</h4>My CV Landingpage, build with nuxtjs
                 <hr>
                 <a
                   href="https://github.com/puterakahfi/nuxt-cv"
@@ -94,7 +94,7 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Personal Blog</h4>This is some text within a card body.
+                <h4>Personal Blog</h4>Personal blog, build with gridsome
                 <hr>
                 <a
                   href="https://github.com/puterakahfi/puterakahfi.github.io"
@@ -116,7 +116,7 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Invest Review</h4>This is some text within a card body.
+                <h4>Invest Review</h4>Refview investment platforms 
                 <hr>
                 <a
                   href="https://github.com/puterakahfi/refview-invest"
@@ -137,7 +137,7 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Nuxt Awesome</h4>This is some text within a card body.
+                <h4>Nuxt Awesome</h4>Nuxt js resource landingpage
                 <hr>
                 <a
                   href="https://github.com/puterakahfi/nuxt-awesome"

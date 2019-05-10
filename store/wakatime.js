@@ -4,7 +4,7 @@ export const state = () => ({
       label: "Language",
       isActive: true,
       url:
-        "https://wakatime.com/share/@puterakahfi/57943941-448a-46b1-a147-e06afcd0fa0a.svg"
+        "https://wakatime.com/share/@puterakahfi/d152388c-0b27-4147-807b-c5742cd633c1.svg"
     },
     {
       label: "Coding Activity",
