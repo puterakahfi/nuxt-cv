@@ -1,15 +1,15 @@
 export const state = () => ({
   list: [
     {
-      label: "Coding Activity",
+      label: "Language",
       isActive: true,
       url:
-        "https://wakatime.com/share/@puterakahfi/ccc17d7a-5f37-4a55-9620-56a25b8a6231.svg"
+        "https://wakatime.com/share/@puterakahfi/57943941-448a-46b1-a147-e06afcd0fa0a.svg"
     },
     {
-      label: "Language",
+      label: "Coding Activity",
       url:
-        "https://wakatime.com/share/@puterakahfi/57943941-448a-46b1-a147-e06afcd0fa0a.svg"
+        "https://wakatime.com/share/@puterakahfi/ccc17d7a-5f37-4a55-9620-56a25b8a6231.svg"
     },
     {
       label: "OS",
