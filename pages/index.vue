@@ -2,9 +2,10 @@
   <div class="container">
     <div class="row" id="head">
       <div class="col-md-6 col-sm-12 pt-5 mt-5 mb-5">
+                <div class="titleunderline"></div>
+
         <h1 class="display-3">Putera Kahfi</h1>
 
-        <div class="titleunderline mb-3"></div>
         <h4>
           <span class>Backend</span> / Frontend Developer.
         </h4>
@@ -34,29 +35,40 @@
             <fa :icon="['fab', 'medium']"/>&nbsp;medium
           </a>
 
+          <a
+            href="https://www.facebook.com/codejunior"
+            class="btn btn-default smooth shadowless"
+            target="_blank"
+          >
+            <fa :icon="['fab', 'facebook']"/>&nbsp;facebook
+          </a>
+
           <br>
           <br>
           <a
             class="btn btn-lg btn-primary btn-icon icon-left shadowless disabled"
             href="download"
             target="_blank"
+            style="display:none"
           >
             <fa :icon="['fas', 'file-pdf']"/>&nbsp;download CV ( coming soon)
           </a>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
-        <div class="row">
-          <div class="col-12">
-            <Wakatime/>
-          </div>
-        </div>
+        <img
+          src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/version_control_9bpv.svg"
+          class="img img-fluid"
+        >
       </div>
     </div>
     <br>
 
     <div class="row">
       <div class="col-md-6" id="section-skill">
+        <Wakatime/>
+
+        <br>
         <h2>Skillset</h2>
 
         <div class="titleunderline mb-3"></div>
@@ -70,7 +82,7 @@
         <br>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="card ">
+            <div class="card">
               <div class="card-body">
                 <h4>Personal CV</h4>My CV Landingpage, build with nuxtjs
                 <hr>
@@ -116,7 +128,7 @@
           <div class="col-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4>Invest Review</h4>Refview investment platforms 
+                <h4>Invest Review</h4>Refview investment platforms
                 <hr>
                 <a
                   href="https://github.com/puterakahfi/refview-invest"
@@ -158,7 +170,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -179,7 +190,7 @@ export default {
     Skillset
   },
   async asyncData({ $axios }) {
-    let act  = await $axios.$get(
+    let act = await $axios.$get(
       "https://api.github.com/users/puterakahfi/events"
     );
 

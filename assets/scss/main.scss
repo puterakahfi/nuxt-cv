@@ -30,6 +30,16 @@ h6 {
   font-weight: 700;
 }
 
+#head {
+  .titleunderline {
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #3884ff;
+  }
+}
+
 .titleunderline {
   display: inline-block;
   width: 70px;
