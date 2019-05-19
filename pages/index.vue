@@ -167,6 +167,28 @@
               </div>
             </div>
           </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <h4>Course Landingpage</h4>build with nuxtjs
+                <hr>
+                <a
+                  href="https://github.com/puterakahfi/course-landingpage"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >
+                  <fa :icon="['fab', 'github']"/>&nbsp;github
+                </a>
+
+                <a
+                  href="https://puterakahfi.github.io/course-landingpage/"
+                  class="btn btn-sm btn-dark smooth shadowless"
+                  target="_blank"
+                >&nbsp;link</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
