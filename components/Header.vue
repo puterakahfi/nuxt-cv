@@ -22,12 +22,14 @@
           <fa :icon="['fab', 'linkedin']"/>&nbsp;linkedin
         </a>
 
-        <a href="https://medium.com/@puterakahfi" class="button is-white" target="_blank">
-          <fa :icon="['fab', 'medium']"/>&nbsp;medium
-        </a>
 
         <a href="https://www.facebook.com/codejunior" class="button is-white" target="_blank">
           <fa :icon="['fab', 'facebook']"/>&nbsp;facebook
+        </a>
+
+
+        <a href="https://puterakahfi.github.io" class="button is-white" target="_blank">
+          <fa :icon="['fas', 'globe']"/>&nbsp;blog
         </a>
 
         <a
