@@ -1,185 +1,62 @@
 <template>
-  <div class="container">
-    <div class="row" id="head">
-      <div class="col-md-6 col-sm-12 pt-5 mt-5 mb-5">
-        <h1 class="display-3">Putera Kahfi</h1>
-
-        <div class="titleunderline mb-3"></div>
-        <h4>
-          <span class>Backend</span> / Frontend Developer.
-        </h4>
-
-        <div class="cta">
-          <a
-            href="https://github.com/puterakahfi"
-            class="btn btn-default smooth shadowless ml-0 pl-0"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'github']"/>&nbsp;github
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/putera-kahfi-52663b48"
-            class="btn btn-default smooth shadowless"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'linkedin']"/>&nbsp;linkedin
-          </a>
-
-          <a
-            href="https://medium.com/@puterakahfi"
-            class="btn btn-default smooth shadowless"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'medium']"/>&nbsp;blog
-          </a>
-
-          <br>
-          <br>
-          <a
-            class="btn btn-lg btn-primary btn-icon icon-left shadowless disabled"
-            href="download"
-            target="_blank"
-          >
-            <fa :icon="['fas', 'file-pdf']"/>&nbsp;download CV ( coming soon)
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="row">
-          <div class="col-12">
+  <section>
+    <div class="container">
+      <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
+    </div>
+    <section class="has-background-white has-padding-top-50 has-padding-bottom-50">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6" id="section-skill">
             <Wakatime/>
           </div>
-        </div>
-      </div>
-    </div>
-    <br>
-
-    <div class="row">
-      <div class="col-md-6" id="section-skill">
-        <h2>Skillset</h2>
-
-        <div class="titleunderline mb-3"></div>
-        <h6>Web development skillset ( higher is better )</h6>
-
-        <Skillset/>
-      </div>
-      <div class="col-md-6">
-        <h2>Projects</h2>
-        <div class="titleunderline mb-3"></div>
-        <br>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Personal CV</h4>This is some text within a card body.
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/nuxt-cv"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/nuxt-cv/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Personal Blog</h4>This is some text within a card body.
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/puterakahfi.github.io"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Invest Review</h4>This is some text within a card body.
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/refview-invest"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/refview-invest/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Nuxt Awesome</h4>This is some text within a card body.
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/nuxt-awesome"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/nuxt-awesome/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
+          <div class="column is-6">
+            <div class="titleunderline is-medium"></div>
+            <h2 class="title is-3 has-margin-bottom-10">Skillset</h2>
+            <h6>Web development skillset ( higher is better )</h6>
+            <Skillset class="has-margin-top-20"/>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div>
+    <section class="has-background-white has-padding-top-50">
+      <div class="container">
+        <div class="columns">
+          <div class="column" id="section-skill">
+            <div class="titleunderline is-medium"></div>
+
+            <h2 class="title is-3">{{projects.label}}</h2>
+
+            <Projects :data="projects"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
 import Wakatime from "~/components/Wakatime.vue";
 import Skillset from "~/components/Skillset.vue";
+import Projects from "~/components/Projects.vue";
+import Header from "~/components/Header.vue";
 
+import projects from "~/static/projects.json";
 export default {
   data: function() {
     return {
-      activity: ""
+      activity: "",
+      projects: projects
     };
   },
   components: {
-    Logo,
     Wakatime,
-    Skillset
+    Skillset,
+    Projects,
+    Header
   },
   async asyncData({ $axios }) {
-    let act  = await $axios.$get(
+    let act = await $axios.$get(
       "https://api.github.com/users/puterakahfi/events"
     );
 

@@ -1,33 +1,11 @@
-@import "helpers.scss";
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import "_helpers.scss", "_bulma.scss", "_variables.scss", "_typography.scss";
 
-$fontColor: rgb(12, 52, 75);
 body {
-  background: white;
-  color: $fontColor;
+  background: $bodyBackgrond;
 }
 
-.navbar {
-  color: black;
-
-  .navbar-brand {
-    color: $fontColor !important;
-    margin: 3px auto;
-  }
-
-  .nav-link {
-    color: black !important;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
 }
 
 .titleunderline {
@@ -36,4 +14,14 @@ h6 {
   height: 4px;
   border-radius: 20px;
   background-color: #3884ff;
+
+  &.is-large {
+    width: 90px;
+    height: 12px;
+  }
+
+  &.is-medium {
+    width: 70px;
+    height: 8px;
+  }
 }

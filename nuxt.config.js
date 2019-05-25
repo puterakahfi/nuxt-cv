@@ -28,7 +28,7 @@ export default {
       {
         src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
         type: "text/javascript"
-      },
+      }
     ]
   },
 
@@ -51,8 +51,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/axios',
-    "bootstrap-vue/nuxt",
+    "@nuxtjs/axios",
+    "nuxt-buefy",
     [
       "nuxt-fontawesome",
       {
@@ -71,7 +71,6 @@ export default {
       }
     ]
   ],
-
 
   /*
    ** Build configuration
