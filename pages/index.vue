@@ -12,7 +12,7 @@
           <div class="column is-6">
             <div class="titleunderline is-medium"></div>
             <h2 class="title is-3 has-margin-bottom-10">Skillset</h2>
-            <h6>Web development skillset ( higher is better )</h6>
+            <h6 class="has-text-grey	">Web development skillset ( higher is better )</h6>
             <Skillset class="has-margin-top-20"/>
           </div>
         </div>
