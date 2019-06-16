@@ -3,9 +3,10 @@
     <div class="column is-6" v-for="project in data.items" :key="project.label">
       <div class="card has-equal-height">
         <div class="card-content">
-          <h4 class="title is-4">{{project.label}}</h4>
-          {{ project.description }}
-          <hr>
+          <h4 class="title is-4 has-margin-bottom-10">{{project.label}}</h4>
+          <p class="is-size-7">
+          {{ project.description }}</p>
+          <hr class="is-paddingless has-margin-top-10 has-margin-bottom-10">
           <a
             v-for="link in project.links"
             :key="link.url"

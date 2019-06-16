@@ -11,7 +11,7 @@
           </div>
           <div class="column is-6">
             <div class="titleunderline is-medium"></div>
-            <h2 class="title is-3 has-margin-bottom-10">Skillset</h2>
+            <h2 class="title is-4 has-margin-bottom-10">Skillset</h2>
             <h6 class="has-text-grey">Web development skillset ( higher is better )</h6>
             <Skillset class="has-margin-top-20"/>
           </div>
@@ -25,7 +25,7 @@
           <div class="column is-7" id="section-skill">
             <div class="titleunderline is-medium"></div>
 
-            <h2 class="title is-3">{{projects.label}}</h2>
+            <h2 class="title is-4 has-margin-bottom-20">{{projects.label}}</h2>
 
             <Projects :data="projects"/>
           </div>
@@ -58,13 +58,6 @@ export default {
     Skillset,
     Projects,
     Header
-  },
-  async asyncData({ $axios }) {
-    let act = await $axios.$get(
-      "https://api.github.com/users/puterakahfi/events"
-    );
-
-    return { activity: act };
   }
 };
 </script>
