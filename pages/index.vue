@@ -1,8 +1,28 @@
 <template>
   <section>
-    <div class="container">
-      <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
-    </div>
+    <section id="header" class="has-background-white-ter	">
+      <div class="container">
+        <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
+      </div>
+    </section>
+    
+    <section class="has-background-light has-padding-bottom-50">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-7" id="section-skill">
+            <div class="titleunderline is-medium"></div>
+
+            <h2 class="title is-4 has-margin-bottom-20">{{projects.label}}</h2>
+
+            <Projects :data="projects"/>
+          </div>
+          <div class="column is-5">
+            <github-feed login="puterakahfi"></github-feed>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="has-background-white has-padding-top-50 has-padding-bottom-50">
       <div class="container">
         <div class="columns">
@@ -19,23 +39,6 @@
       </div>
     </section>
 
-    <section class="has-background-light has-padding-top-50">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-7" id="section-skill">
-            <div class="titleunderline is-medium"></div>
-
-            <h2 class="title is-4 has-margin-bottom-20">{{projects.label}}</h2>
-
-            <Projects :data="projects"/>
-          </div>
-          <div class="column is-5">
-            <github-feed login="puterakahfi"></github-feed>
-
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
 </template>
 
@@ -65,6 +68,11 @@ export default {
 <style lang="scss" scoped>
 .line-through {
   text-decoration: line-through;
+}
+
+#header
+{
+  background: #1E2229;
 }
 
 h1 {
