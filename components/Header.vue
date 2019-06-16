@@ -60,7 +60,7 @@ export default {
       ]
     };
   },
-  mounted: {
+  computed: {
     randomImage: function() {
       return this.randomImages[
         Math.floor(Math.random() * this.randomImages.length)

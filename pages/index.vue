@@ -12,22 +12,26 @@
           <div class="column is-6">
             <div class="titleunderline is-medium"></div>
             <h2 class="title is-3 has-margin-bottom-10">Skillset</h2>
-            <h6 class="has-text-grey	">Web development skillset ( higher is better )</h6>
+            <h6 class="has-text-grey">Web development skillset ( higher is better )</h6>
             <Skillset class="has-margin-top-20"/>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="has-background-white has-padding-top-50">
+    <section class="has-background-light has-padding-top-50">
       <div class="container">
         <div class="columns">
-          <div class="column" id="section-skill">
+          <div class="column is-7" id="section-skill">
             <div class="titleunderline is-medium"></div>
 
             <h2 class="title is-3">{{projects.label}}</h2>
 
             <Projects :data="projects"/>
+          </div>
+          <div class="column is-5">
+            <github-feed login="puterakahfi"></github-feed>
+
           </div>
         </div>
       </div>

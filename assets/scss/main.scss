@@ -1,8 +1,13 @@
 @import "_helpers.scss", "_bulma.scss", "_variables.scss", "_typography.scss",
   "_buttons.scss";
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css");
 body {
   background: $bodyBackgrond;
+}
+
+.container {
+  max-width: 1000px;
 }
 
 .card {
@@ -25,4 +30,13 @@ body {
     width: 70px;
     height: 8px;
   }
+}
+
+.avatar-wrapper {
+  display: inline;
+  float: right;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  max-width: 60px;
+  height: 67px;
 }

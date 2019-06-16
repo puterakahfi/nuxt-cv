@@ -1,6 +1,6 @@
 <template>
   <div class="columns is-multiline">
-    <div class="column is-4" v-for="project in data.items" :key="project.label">
+    <div class="column is-6" v-for="project in data.items" :key="project.label">
       <div class="card has-equal-height">
         <div class="card-content">
           <h4 class="title is-4">{{project.label}}</h4>
