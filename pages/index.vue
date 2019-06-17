@@ -1,18 +1,18 @@
 <template>
   <section>
-    <section id="header" class="has-background-white-ter	">
+    <section id="header" class>
       <div class="container">
         <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
       </div>
     </section>
-    
-    <section class="has-background-light has-padding-bottom-50">
+
+    <section class="has-padding-bottom-50">
       <div class="container">
         <div class="columns">
           <div class="column is-7" id="section-skill">
-            <div class="titleunderline is-medium"></div>
+            <div class="titleunderline is-small"></div>
 
-            <h2 class="title is-4 has-margin-bottom-20">{{projects.label}}</h2>
+            <h2 class="title is-4 has-margin-bottom-20 is-light">{{projects.label}}</h2>
 
             <Projects :data="projects"/>
           </div>
@@ -26,29 +26,29 @@
     <section class="has-background-white has-padding-top-50 has-padding-bottom-50">
       <div class="container">
         <div class="columns">
-          <div class="column is-6" id="section-skill">
+          <div class="column is-5" id="section-skill">
             <Wakatime/>
           </div>
-          <div class="column is-6">
-            <div class="titleunderline is-medium"></div>
-            <h2 class="title is-4 has-margin-bottom-10">Skillset</h2>
-            <h6 class="has-text-grey">Web development skillset ( higher is better )</h6>
-            <Skillset class="has-margin-top-20"/>
+          <div class="column is-7">
+            <div class="titleunderline is-small"></div>
+            <h2 class="title is-4 has-margin-bottom-10 is-light">Skillset</h2>
+            <SkillsetCard />
           </div>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-  <div class="content has-text-centered">
-    <p class="has-text-grey-light	">
-      <strong>CV Online</strong> by <a href="https://puterakahfi.github.io">Putera Kahfi</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-    </p>
-  </div>
-</footer>
-
+      <div class="content has-text-centered">
+        <p class="has-text-grey-light">
+          <strong>CV Online</strong> by
+          <a href="https://puterakahfi.github.io">Putera Kahfi</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
   </section>
 </template>
 
@@ -57,6 +57,7 @@ import Wakatime from "~/components/Wakatime.vue";
 import Skillset from "~/components/Skillset.vue";
 import Projects from "~/components/Projects.vue";
 import Header from "~/components/Header.vue";
+import SkillsetCard from "~/components/SkillsetCard.vue";
 
 import projects from "~/static/projects.json";
 export default {
@@ -70,7 +71,8 @@ export default {
     Wakatime,
     Skillset,
     Projects,
-    Header
+    Header,
+    SkillsetCard
   }
 };
 </script>
@@ -80,9 +82,8 @@ export default {
   text-decoration: line-through;
 }
 
-#header
-{
-  background: #1E2229;
+section {
+  background: #f9f9ff;
 }
 
 h1 {
@@ -92,6 +93,11 @@ h1 {
 }
 h4 {
   margin-bottom: 10px;
+
+  .title
+  {
+    color:#bebece;
+  }
 }
 .card {
   border: none;
@@ -118,5 +124,10 @@ h4 {
     color: #484040;
     font-weight: lighter;
   }
+}
+
+.is-light
+{
+  color:#bebece;
 }
 </style>

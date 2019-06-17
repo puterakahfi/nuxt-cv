@@ -1,4 +1,3 @@
-
 <script>
 import VueCharts from "vue-chartjs";
 import { Bar, Line, Radar } from "vue-chartjs";

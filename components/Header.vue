@@ -5,7 +5,7 @@
       <img :src="randomImage" class="img img-fluid">
     </div>
     <div class="column is-6">
-      <div class="titleunderline is-large has-margin-top-50"></div>
+      <div class="titleunderline is-medium has-margin-top-50"></div>
 
       <h1 class="title is-size-large has-margin-bottom-5 has-text-grey-darker		">Putera Kahfi</h1>
 

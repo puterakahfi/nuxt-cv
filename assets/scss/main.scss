@@ -29,6 +29,11 @@ body {
     width: 70px;
     height: 8px;
   }
+
+  &.is-small {
+    width: 50px;
+    height: 5px;
+  }
 }
 
 .avatar-wrapper {
