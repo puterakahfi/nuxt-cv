@@ -2,8 +2,8 @@
     "label": "Projects",
     "items": [
         {
-            "label": "CV ",
-            "description": "My CV Landingpage, build with nuxtjs",
+            "label": "CV Online",
+            "description": "My CV Online, build with nuxtjs",
             "links": [
                 {
                     "label": "",
@@ -24,8 +24,8 @@
             ]
         },
         {
-            "label": "Blog ",
-            "description": "My Blog, build with gridsome",
+            "label": "Personal Web ",
+            "description": "My Personal Web, build with gridsome",
             "links": [
                 {
                     "label": "",
