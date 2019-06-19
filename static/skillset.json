@@ -1,0 +1,23 @@
+{
+    "label": "Skillset",
+    "items": [
+        {
+            "label": "Symfony Framework",
+            "level": "intermediate",
+            "description": "description",
+            "image": "https://img.icons8.com/color/344/symfony.png"
+        },
+        {
+            "label": "NuxtJS",
+            "level": "intermediate",
+            "description": "description",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png"
+        },
+        {
+            "label": "Gridsome",
+            "level": "intermediate",
+            "description": "description",
+            "image": "https://gridsome.org/logos/logo-circle-normal.svg"
+        }
+    ]
+}

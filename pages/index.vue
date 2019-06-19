@@ -32,7 +32,7 @@
           <div class="column is-7">
             <div class="titleunderline is-small"></div>
             <h2 class="title is-4 has-margin-bottom-10 is-light">Skillset</h2>
-            <SkillsetCard />
+            <SkillsetCard :data="skillset" />
           </div>
         </div>
       </div>
@@ -60,11 +60,14 @@ import Header from "~/components/Header.vue";
 import SkillsetCard from "~/components/SkillsetCard.vue";
 
 import projects from "~/static/projects.json";
+import skillset from "~/static/skillset.json";
+
 export default {
   data: function() {
     return {
       activity: "",
-      projects: projects
+      projects: projects,
+      skillset: skillset
     };
   },
   components: {

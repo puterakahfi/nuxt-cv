@@ -30,3 +30,11 @@ export default {
   props: ["data"]
 };
 </script>
+
+
+<style lang="scss" scoped>
+.card{
+  border-radius: 5px;
+}
+</style>
+

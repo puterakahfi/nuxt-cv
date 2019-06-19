@@ -1,9 +1,7 @@
 <template>
   <div class="columns is-left" id="head">
 
-    <div class="column is-5">
-      <img :src="randomImage" class="img img-fluid">
-    </div>
+
     <div class="column is-6">
       <div class="titleunderline is-medium has-margin-top-50"></div>
 
@@ -47,6 +45,10 @@
       </div>
     </div>
 
+        <div class="column is-6">
+      <img :src="selectedImage" class="img img-fluid">
+    </div>
+
     
   </div>
 </template>
@@ -61,15 +63,14 @@ export default {
         "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/professor_8lrt.svg",
         "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/code_review_l1q9.svg",
         "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/teaching_f1cm.svg"
-      ]
+      ],
+      selectedImage:""
     };
   },
-  computed: {
-    randomImage: function() {
-      return this.randomImages[
+  mounted: function(){
+      this.selectedImage = this.randomImages[
         Math.floor(Math.random() * this.randomImages.length)
       ];
-    }
   }
 };
 </script>
