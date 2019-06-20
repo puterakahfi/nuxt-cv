@@ -1,0 +1,137 @@
+{
+    "label": "Projects",
+    "items": [
+        {
+            "label": "CV Online",
+            "description": "My CV Online, build with nuxtjs",
+            "links": [
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/nuxt-cv/"
+                },
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/puterakahfi/nuxt-cv"
+                }
+            ]
+        },
+        {
+            "label": "Personal Web ",
+            "description": "My Personal Web, build with gridsome",
+            "links": [
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io"
+                },
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/puterakahfi/puterakahfi.github.io"
+                }
+            ]
+        },
+        {
+            "label": "Invest Refview ",
+            "description": "Investment p2p platform refview, build with nuxtjs",
+            "links": [
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/refview-invest/"
+                },
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/puterakahfi/refview-invest"
+                }
+            ]
+        },
+        {
+            "label": "Nuxt Awesome ",
+            "description": "My CV Landingpage, build with nuxtjs",
+            "links": [
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/nuxt-awesome/"
+                },
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/puterakahfi/nuxt-awesome"
+                }
+            ]
+        },
+        {
+            "label": "Course Landingpage ",
+            "description": "Course Landingpage, build with nuxtjs",
+            "links": [
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/course-landingpage/"
+                },
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/puterakahfi/course-landingpage"
+                }
+            ]
+        },
+        {
+            "label": "Codeigniter ID Website ",
+            "description": "Codeigniter Indonesia website,build with gridsome, markdown",
+            "links": [
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://codeigniter-id.github.io/"
+                },
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/codeigniter-id/codeigniter-id.github.io"
+                }
+            ]
+        }
+    ]
+}

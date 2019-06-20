@@ -1,15 +1,15 @@
 <template>
-  <div class="">
-    <b-tabs content-class="mt-3" pills>
-      <b-tab
-        :title="item.label"
+  <div>
+    <b-tabs content-class="mt-3" type="is-boxed">
+      <b-tab-item
+        :label="item.label"
         :key="item.label"
         v-for="item  in wakatime"
         :active="item.isActive"
         class="shadowless"
       >
         <embed :src="item.url">
-      </b-tab>
+      </b-tab-item>
     </b-tabs>
   </div>
 </template>

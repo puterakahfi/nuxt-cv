@@ -1,222 +1,81 @@
 <template>
-  <div class="container">
-    <div class="row" id="head">
-      <div class="col-md-6 col-sm-12 pt-5 mt-5 mb-5">
-                <div class="titleunderline"></div>
-
-        <h1 class="display-3">Putera Kahfi</h1>
-
-        <h4>
-          <span class>Backend</span> / Frontend Developer.
-        </h4>
-
-        <div class="cta">
-          <a
-            href="https://github.com/puterakahfi"
-            class="btn btn-default smooth shadowless ml-0 pl-0"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'github']"/>&nbsp;github
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/putera-kahfi-52663b48"
-            class="btn btn-default smooth shadowless"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'linkedin']"/>&nbsp;linkedin
-          </a>
-
-          <a
-            href="https://medium.com/@puterakahfi"
-            class="btn btn-default smooth shadowless"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'medium']"/>&nbsp;medium
-          </a>
-
-          <a
-            href="https://www.facebook.com/codejunior"
-            class="btn btn-default smooth shadowless"
-            target="_blank"
-          >
-            <fa :icon="['fab', 'facebook']"/>&nbsp;facebook
-          </a>
-
-          <br>
-          <br>
-          <a
-            class="btn btn-lg btn-primary btn-icon icon-left shadowless disabled"
-            href="download"
-            target="_blank"
-            style="display:none"
-          >
-            <fa :icon="['fas', 'file-pdf']"/>&nbsp;download CV ( coming soon)
-          </a>
-        </div>
+  <section>
+    <section id="header" class>
+      <div class="container">
+        <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <img
-          src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/version_control_9bpv.svg"
-          class="img img-fluid"
-        >
-      </div>
-    </div>
-    <br>
+    </section>
 
-    <div class="row">
-      <div class="col-md-6" id="section-skill">
-        <Wakatime/>
+    <section class="has-padding-bottom-50">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-7" id="section-skill">
+            <div class="titleunderline is-small"></div>
 
-        <br>
-        <h2>Skillset</h2>
+            <h2 class="title is-4 has-margin-bottom-20 is-light">{{projects.label}}</h2>
 
-        <div class="titleunderline mb-3"></div>
-        <h6>Web development skillset ( higher is better )</h6>
-
-        <Skillset/>
-      </div>
-      <div class="col-md-6">
-        <h2>Projects</h2>
-        <div class="titleunderline mb-3"></div>
-        <br>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Personal CV</h4>My CV Landingpage, build with nuxtjs
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/nuxt-cv"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/nuxt-cv/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
+            <Projects :data="projects"/>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Personal Blog</h4>Personal blog, build with gridsome
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/puterakahfi.github.io"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Invest Review</h4>Refview investment platforms
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/refview-invest"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/refview-invest/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Nuxt Awesome</h4>Nuxt js resource landingpage
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/nuxt-awesome"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/nuxt-awesome/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
-          </div>
-
-                    <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <div class="card-body">
-                <h4>Course Landingpage</h4>build with nuxtjs
-                <hr>
-                <a
-                  href="https://github.com/puterakahfi/course-landingpage"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >
-                  <fa :icon="['fab', 'github']"/>&nbsp;github
-                </a>
-
-                <a
-                  href="https://puterakahfi.github.io/course-landingpage/"
-                  class="btn btn-sm btn-dark smooth shadowless"
-                  target="_blank"
-                >&nbsp;link</a>
-              </div>
-            </div>
+          <div class="column is-5">
+            <github-feed login="puterakahfi"></github-feed>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="has-background-white has-padding-top-50 has-padding-bottom-50">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-5" id="section-skill">
+            <Wakatime/>
+          </div>
+          <div class="column is-7">
+            <div class="titleunderline is-small"></div>
+            <h2 class="title is-4 has-margin-bottom-10 is-light">Skillset</h2>
+            <SkillsetCard :data="skillset" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p class="has-text-grey-light">
+          <strong>CV Online</strong> by
+          <a href="https://puterakahfi.github.io">Putera Kahfi</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
+  </section>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
 import Wakatime from "~/components/Wakatime.vue";
 import Skillset from "~/components/Skillset.vue";
+import Projects from "~/components/Projects.vue";
+import Header from "~/components/Header.vue";
+import SkillsetCard from "~/components/SkillsetCard.vue";
+
+import projects from "~/static/projects.json";
+import skillset from "~/static/skillset.json";
 
 export default {
   data: function() {
     return {
-      activity: ""
+      activity: "",
+      projects: projects,
+      skillset: skillset
     };
   },
   components: {
-    Logo,
     Wakatime,
-    Skillset
-  },
-  async asyncData({ $axios }) {
-    let act = await $axios.$get(
-      "https://api.github.com/users/puterakahfi/events"
-    );
-
-    return { activity: act };
+    Skillset,
+    Projects,
+    Header,
+    SkillsetCard
   }
 };
 </script>
@@ -226,6 +85,10 @@ export default {
   text-decoration: line-through;
 }
 
+section {
+  background: #f9f9ff;
+}
+
 h1 {
   &.display-3 {
     font-weight: bold;
@@ -233,6 +96,11 @@ h1 {
 }
 h4 {
   margin-bottom: 10px;
+
+  .title
+  {
+    color:#bebece;
+  }
 }
 .card {
   border: none;
@@ -259,5 +127,10 @@ h4 {
     color: #484040;
     font-weight: lighter;
   }
+}
+
+.is-light
+{
+  color:#bebece;
 }
 </style>

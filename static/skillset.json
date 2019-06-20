@@ -1,0 +1,33 @@
+{
+    "label": "Skillset",
+    "items": [
+        {
+            "label": "Symfony Framework",
+            "level": "intermediate",
+            "description": " ",
+            "image": "https://img.icons8.com/color/344/symfony.png",
+            "url": "https://symfony.com"
+        },
+        {
+            "label": "NuxtJS",
+            "level": "intermediate",
+            "description": "",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png",
+            "url": "https://nuxtjs.org"
+        },
+        {
+            "label": "Gridsome",
+            "level": "intermediate",
+            "description": "",
+            "image": "https://gridsome.org/logos/logo-circle-light.svg",
+            "url": "https://gridsome.org"
+        },
+        {
+            "label": "Codeigniter ",
+            "level": "intermediate",
+            "description": "",
+            "image": "https://cdn.iconscout.com/icon/free/png-256/codeigniter-5-1175246.png",
+            "url": "https://codeigniter.com"
+        }
+    ]
+}
