@@ -28,11 +28,19 @@
       </div>
 
       <nav class="level is-mobile other-skill">
-             <div class="level-item has-text-centered has-margin-left-10">
+        <div class="level-item has-text-centered has-margin-left-10">
           <div>
             <p class="heading"></p>
-            <p class="subtitle">
-              Other:
+            <p class="subtitle">Other:</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading"></p>
+            <p class="title">
+              <b-tooltip label="docker" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'docker']"/>
+              </b-tooltip>
             </p>
           </div>
         </div>
@@ -40,7 +48,9 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <fa :icon="['fab', 'docker']"/>
+              <b-tooltip label="git" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'git']"/>
+              </b-tooltip>
             </p>
           </div>
         </div>
@@ -48,7 +58,9 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <fa :icon="['fab', 'git']"/>
+              <b-tooltip label="bootstrap" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'bootstrap']"/>
+              </b-tooltip>
             </p>
           </div>
         </div>
@@ -56,28 +68,33 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <fa :icon="['fab', 'bootstrap']"/>
-            </p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="heading"></p>
-            <p class="title">
-              <fa :icon="['fab', 'ubuntu']"/>
+              <b-tooltip label="ubuntu" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'ubuntu']"/>
+              </b-tooltip>
             </p>
           </div>
         </div>
 
-         <div class="level-item has-text-centered">
+        <div class="level-item has-text-centered">
           <div>
             <p class="heading"></p>
             <p class="title">
-              <fa :icon="['fab', 'sass']"/>
+              <b-tooltip label="sass" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'sass']"/>
+              </b-tooltip>
             </p>
           </div>
         </div>
-     
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading"></p>
+            <p class="title">
+              <b-tooltip label="markdown" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'markdown']"/>
+              </b-tooltip>
+            </p>
+          </div>
+        </div>
       </nav>
     </div>
   </div>
@@ -89,18 +106,15 @@
   padding: 1em;
 }
 
-.other-skill
-{
-  .title
-  {
+.other-skill {
+  .title {
     font-size: 1.3rem;
-    color:#BEBECE;
+    color: #bebece;
   }
 
-  .subtitle
-  {
+  .subtitle {
     font-size: 1rem;
-    color:#BEBECE;
+    color: #bebece;
   }
 }
 </style>
