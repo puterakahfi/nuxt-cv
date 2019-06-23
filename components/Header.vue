@@ -1,76 +1,46 @@
 <template>
   <div class="columns is-left" id="head">
-
-
     <div class="column is-6">
       <div class="titleunderline is-medium has-margin-top-50"></div>
+      <h1 class="title is-size-large has-margin-bottom-5 has-text-grey-darker">{{data.name}}</h1>
 
-      <h1 class="title is-size-large has-margin-bottom-5 has-text-grey-darker		">Putera Kahfi</h1>
-
-      <h4 class="subtitle is-4 has-margin-top-10 has-text-grey		">
-        <span class>Backend</span> / Frontend Developer
-      </h4>
+      <h4 class="subtitle is-4 has-margin-top-10 has-text-grey">{{ data.title}}</h4>
 
       <div class="cta">
-        <a href="https://github.com/puterakahfi" class="button is-white" target="_blank">
-          <fa :icon="['fab', 'github']"/>&nbsp;github
-        </a>
-
         <a
-          href="https://www.linkedin.com/in/putera-kahfi-52663b48"
-          class="button is-white"
+          v-for="link in data.links"
+          :key="link.url"
+          :href="link.url"
+          class="button is-white has-margin-right-5"
           target="_blank"
         >
-          <fa :icon="['fab', 'linkedin']"/>&nbsp;linkedin
-        </a>
-
-
-        <a href="https://www.facebook.com/codejunior" class="button is-white" target="_blank">
-          <fa :icon="['fab', 'facebook']"/>&nbsp;facebook
-        </a>
-
-
-        <a href="https://puterakahfi.github.io" class="button is-white" target="_blank">
-          <fa :icon="['fas', 'globe']"/>&nbsp;blog
-        </a>
-
-        <a
-          class="button btn-lg btn-primary btn-icon icon-left shadowless disabled"
-          href="download"
-          target="_blank"
-          style="display:none"
-        >
-          <fa :icon="['fas', 'file-pdf']"/>&nbsp;download CV ( coming soon)
+          <fa v-if="link.icon" :icon="[link.icon[0], link.icon[1]]"/>
+          &nbsp; {{ link.label }}
         </a>
       </div>
     </div>
 
-        <div class="column is-6">
+    <div class="column is-6">
       <img :src="selectedImage" class="img img-fluid">
     </div>
-
-    
   </div>
 </template>
 
 
+
+
 <script>
 export default {
+  props: ["data"],
   data() {
     return {
-      randomImages: [
-        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/web_developer_p3e5.svg",
-        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/professor_8lrt.svg",
-        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/code_review_l1q9.svg",
-        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/teaching_f1cm.svg"
-      ],
-      selectedImage:""
+      selectedImage: ""
     };
   },
-  mounted: function(){
-      this.selectedImage = this.randomImages[
-        Math.floor(Math.random() * this.randomImages.length)
-      ];
+  mounted: function() {
+    this.selectedImage = this.data.images[
+      Math.floor(Math.random() * this.data.images.length)
+    ];
   }
 };
 </script>
