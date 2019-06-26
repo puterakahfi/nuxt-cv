@@ -34,11 +34,27 @@
             <p class="subtitle">Other:</p>
           </div>
         </div>
+
         <div class="level-item has-text-centered">
           <div>
             <p class="heading"></p>
             <p class="title">
-              <b-tooltip label="docker" type="is-dark" position="is-bottom" class="title">
+              <b-tooltip label="vuejs:beginner" type="is-dark" position="is-bottom" class="title">
+                <fa :icon="['fab', 'vuejs']"/>
+              </b-tooltip>
+            </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading"></p>
+            <p class="title">
+              <b-tooltip
+                label="docker:intermediate"
+                type="is-dark"
+                position="is-bottom"
+                class="title"
+              >
                 <fa :icon="['fab', 'docker']"/>
               </b-tooltip>
             </p>
@@ -48,7 +64,7 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <b-tooltip label="git" type="is-dark" position="is-bottom" class="title">
+              <b-tooltip label="git:intermediate" type="is-dark" position="is-bottom" class="title">
                 <fa :icon="['fab', 'git']"/>
               </b-tooltip>
             </p>
@@ -58,7 +74,12 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <b-tooltip label="bootstrap" type="is-dark" position="is-bottom" class="title">
+              <b-tooltip
+                label="bootstrap:intermediate"
+                type="is-dark"
+                position="is-bottom"
+                class="title"
+              >
                 <fa :icon="['fab', 'bootstrap']"/>
               </b-tooltip>
             </p>
@@ -68,7 +89,7 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <b-tooltip label="ubuntu" type="is-dark" position="is-bottom" class="title">
+              <b-tooltip label="ubuntu:enduser" type="is-dark" position="is-bottom" class="title">
                 <fa :icon="['fab', 'ubuntu']"/>
               </b-tooltip>
             </p>
@@ -79,7 +100,7 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <b-tooltip label="sass" type="is-dark" position="is-bottom" class="title">
+              <b-tooltip label="sass:beginner" type="is-dark" position="is-bottom" class="title">
                 <fa :icon="['fab', 'sass']"/>
               </b-tooltip>
             </p>
@@ -89,7 +110,12 @@
           <div>
             <p class="heading"></p>
             <p class="title">
-              <b-tooltip label="markdown" type="is-dark" position="is-bottom" class="title">
+              <b-tooltip
+                label="markdown:beginner"
+                type="is-dark"
+                position="is-bottom"
+                class="title"
+              >
                 <fa :icon="['fab', 'markdown']"/>
               </b-tooltip>
             </p>

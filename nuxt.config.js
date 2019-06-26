@@ -3,10 +3,10 @@ import pkg from "./package";
 const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
-        router: {
-          base: "/cv/"
-        }
+      router: {
+        base: "/cv/"
       }
+    }
     : {};
 
 export default {
@@ -55,7 +55,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/vue-github-activity"],
+  plugins: [
+    "~/plugins/vue-github-activity",
+    { src: '~/plugins/vue-scroll-reveal', ssr: false }
+  ],
 
   /*
    ** Nuxt.js modules
@@ -89,6 +92,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };

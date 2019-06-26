@@ -29,7 +29,8 @@
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
     "vue-chartjs": "^3.4.2",
-    "vue-github-activity": "^2.1.1"
+    "vue-github-activity": "^2.1.1",
+    "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
