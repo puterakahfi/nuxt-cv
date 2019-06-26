@@ -1,0 +1,33 @@
+{
+    "name": "Putera Kahfi",
+    "title": "Backend / Frontend Dev",
+    "images": [
+        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/code_review_l1q9.svg"
+    ],
+    "links": [
+        {
+            "label": "github",
+            "icon": [
+                "fab",
+                "github"
+            ],
+            "url": "https://github.com/puterakahfi"
+        },
+        {
+            "label": "linkedin",
+            "icon": [
+                "fab",
+                "linkedin"
+            ],
+            "url": "https://www.linkedin.com/in/putera-kahfi-52663b48/"
+        },
+        {
+            "label": "facebook",
+            "icon": [
+                "fab",
+                "facebook"
+            ],
+            "url": "https://www.facebook.com/codejunior"
+        }
+    ]
+}

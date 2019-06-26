@@ -2,7 +2,7 @@
   <section>
     <section id="header" class>
       <div class="container">
-        <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
+        <Header :data="header" class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
       </div>
     </section>
 
@@ -61,15 +61,20 @@ import Projects from "~/components/Projects.vue";
 import Header from "~/components/Header.vue";
 import SkillsetCard from "~/components/SkillsetCard.vue";
 
+
+/* json data */
 import projects from "~/static/projects.json";
 import skillset from "~/static/skillset.json";
+import header from "~/static/header.json";
+
 
 export default {
   data: function() {
     return {
       activity: "",
       projects: projects,
-      skillset: skillset
+      skillset: skillset,
+      header: header
     };
   },
   components: {
