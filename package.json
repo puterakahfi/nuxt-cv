@@ -10,7 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate --no-lock",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build --no-lock",
-    "predeploy": "DEPLOY_ENV=GH_PAGES nuxt generate --no-lock",
+    "predeploy": "DEPLOY_ENV=GH_PAGES nuxt generate ",
     "deploy": "DEPLOY_ENV=GH_PAGES push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
