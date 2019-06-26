@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="columns is-multiline">
-      <div class="column is-6" v-for="skill in data.items" :key="skill.label">
+      <div class="column is-12" v-for="skill in data.items" :key="skill.label">
         <div class="box">
           <article class="media">
             <div class="media-left">
@@ -104,6 +104,8 @@
 <style lang="scss" scoped>
 .box {
   padding: 1em;
+  box-shadow: none;
+  border-radius: none;
 }
 
 .other-skill {
