@@ -5213,7 +5213,7 @@ nuxt-buefy@^0.3.8:
   dependencies:
     buefy "^0.7.8"
 
-nuxt-fontawesome@0.4.1:
+nuxt-fontawesome@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/nuxt-fontawesome/-/nuxt-fontawesome-0.4.0.tgz#e1ea0cdda9ec6785739a86e9e3d42f62a8c10443"
   integrity sha512-4oHIot/WLUBFM7o944EQks7WmntD/YsLxZ+g9mJjY9pHw1FJZBaD7Bd+cDsXvl3h/0/f87QwIXf/AA+vOIY0Ag==
