@@ -3,7 +3,7 @@
   <div>
     <div class="columns is-multiline">
       <div class="column is-12" v-for="skill in data.items" :key="skill.label">
-        <div class="box">
+        <div class="box has-margin-top-5 is-paddingless">
           <article class="media">
             <div class="media-left">
               <figure class="image is-64x64">
