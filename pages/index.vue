@@ -2,7 +2,7 @@
   <section>
     <section  data-aos="fade-down" id="header" class>
       <div class="container">
-        <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
+        <Header :data="header" class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
       </div>
     </section>
 
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <footer class="footer" data-aos="zoom-in">
+    <footer class="footer has-padding-50" data-aos="zoom-in">
       <div class="content has-text-centered">
         <p class="has-text-grey-light">
           <strong>CV Online</strong> by
@@ -62,6 +62,7 @@ import SkillsetCard from "~/components/SkillsetCard.vue";
 import projects from "~/static/projects.json";
 import skillset from "~/static/skillset.json";
 import wakatime from "~/static/wakatime.json";
+import header from "~/static/header.json";
 
 export default {
   data: function() {
@@ -69,7 +70,8 @@ export default {
       activity: "",
       projects: projects,
       skillset: skillset,
-      wakatime: wakatime
+      wakatime: wakatime,
+      header: header
     };
   },
   components: {
