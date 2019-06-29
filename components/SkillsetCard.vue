@@ -2,8 +2,8 @@
 <template>
   <div>
     <div class="columns is-multiline">
-      <div class="column is-12" v-for="skill in data.items" :key="skill.label">
-        <div class="box has-margin-top-5 is-paddingless">
+      <div class="column is-12 is-paddingless" v-for="skill in data.items" :key="skill.label">
+        <div class="box has-margin-top-10 has-margin-bottom-10 is-paddingless">
           <article class="media">
             <div class="media-left">
               <figure class="image is-64x64">
@@ -15,11 +15,11 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <small>{{skill.level}}</small>
+                  <small class="has-text-grey-light	">level : {{skill.level}}</small>
                   <br>
                   <strong class="title is-6">{{skill.label}}</strong>
                   <br>
-                  <small class="is-size-7">{{skill.description}}</small>
+                  <small class="is-size-6 has-text-grey	">{{skill.description}}</small>
                 </p>
               </div>
             </div>
@@ -31,7 +31,7 @@
         <div class="level-item has-text-centered has-margin-left-10">
           <div>
             <p class="heading"></p>
-            <p class="subtitle">Other:</p>
+            <p class="subtitle is-7">Other:</p>
           </div>
         </div>
 
