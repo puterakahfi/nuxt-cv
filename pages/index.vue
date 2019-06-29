@@ -27,7 +27,7 @@
       <div class="container">
         <div class="columns">
           <div class="column is-5" id="section-skill" data-aos="zoom-in">
-            <Wakatime/>
+            <Wakatime :data="wakatime" />
           </div>
           <div class="column is-7" data-aos="zoom-in">
             <div class="titleunderline is-small"></div>
@@ -61,13 +61,15 @@ import SkillsetCard from "~/components/SkillsetCard.vue";
 
 import projects from "~/static/projects.json";
 import skillset from "~/static/skillset.json";
+import wakatime from "~/static/wakatime.json";
 
 export default {
   data: function() {
     return {
       activity: "",
       projects: projects,
-      skillset: skillset
+      skillset: skillset,
+      wakatime: wakatime
     };
   },
   components: {
