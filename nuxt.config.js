@@ -27,7 +27,8 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"
       },
       {
         rel: "stylesheet",
@@ -55,7 +56,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/vue-github-activity"],
+  plugins: [
+    "~/plugins/vue-github-activity",
+    { src: "~/plugins/aos", ssr: false }
+  ],
 
   /*
    ** Nuxt.js modules

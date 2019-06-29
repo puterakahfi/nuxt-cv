@@ -1,6 +1,6 @@
 <template>
   <section>
-    <section id="header" class>
+    <section  data-aos="fade-down" id="header" class>
       <div class="container">
         <Header class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
       </div>
@@ -9,14 +9,14 @@
     <section class="has-padding-bottom-50">
       <div class="container">
         <div class="columns">
-          <div class="column is-7" id="section-skill">
+          <div class="column is-7" id="section-skill" data-aos="fade-left">
             <div class="titleunderline is-small"></div>
 
             <h2 class="title is-4 has-margin-bottom-20 is-light">{{projects.label}}</h2>
 
             <Projects :data="projects"/>
           </div>
-          <div class="column is-5">
+          <div class="column is-5" data-aos="fade-right" >
             <github-feed login="puterakahfi"></github-feed>
           </div>
         </div>
@@ -26,10 +26,10 @@
     <section class="has-background-white has-padding-top-50 has-padding-bottom-50">
       <div class="container">
         <div class="columns">
-          <div class="column is-5" id="section-skill">
+          <div class="column is-5" id="section-skill" data-aos="zoom-in">
             <Wakatime/>
           </div>
-          <div class="column is-7">
+          <div class="column is-7" data-aos="zoom-in">
             <div class="titleunderline is-small"></div>
             <h2 class="title is-4 has-margin-bottom-10 is-light">Skillset</h2>
             <SkillsetCard :data="skillset" />
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in">
       <div class="content has-text-centered">
         <p class="has-text-grey-light">
           <strong>CV Online</strong> by
