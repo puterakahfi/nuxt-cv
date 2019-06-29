@@ -57,7 +57,7 @@ export default {
    */
   plugins: [
     "~/plugins/vue-github-activity",
-    { src: '~/plugins/vue-scroll-reveal', ssr: false }
+    { src: "~/plugins/aos", ssr: false }
   ],
 
   /*
@@ -92,6 +92,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) { }
+    extend(config, ctx) {}
   }
 };
