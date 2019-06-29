@@ -14,7 +14,7 @@
                 "fab",
                 "facebook"
             ],
-            "url": "https://faceboo.com/codejunior/"
+            "url": "https://facebook.com/codejunior/"
         },
         {
             "label": "github",
@@ -28,7 +28,7 @@
             "label": "linkedin",
             "icon": [
                 "fab",
-                "github"
+                "linkedin"
             ],
             "url": "https://www.linkedin.com/in/putera-kahfi-52663b48"
         },
