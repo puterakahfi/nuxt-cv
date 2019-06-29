@@ -6,20 +6,20 @@
             "description": "My CV Online, build with nuxtjs",
             "links": [
                 {
-                    "label": "link",
-                    "icon": [
-                        "fas",
-                        "link"
-                    ],
-                    "url": "https://puterakahfi.github.io/nuxt-cv/"
-                },
-                {
                     "label": "",
                     "icon": [
                         "fab",
                         "github"
                     ],
-                    "url": "https://github.com/puterakahfi/nuxt-cv"
+                    "url": "https://github.com/puterakahfi/cv"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/cv/"
                 }
             ]
         },
@@ -28,20 +28,20 @@
             "description": "My Personal Web, build with gridsome",
             "links": [
                 {
-                    "label": "link",
-                    "icon": [
-                        "fas",
-                        "link"
-                    ],
-                    "url": "https://puterakahfi.github.io"
-                },
-                {
                     "label": "",
                     "icon": [
                         "fab",
                         "github"
                     ],
                     "url": "https://github.com/puterakahfi/puterakahfi.github.io"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io"
                 }
             ]
         },
@@ -50,20 +50,20 @@
             "description": "Investment p2p platform refview, build with nuxtjs",
             "links": [
                 {
-                    "label": "link",
-                    "icon": [
-                        "fas",
-                        "link"
-                    ],
-                    "url": "https://puterakahfi.github.io/refview-invest/"
-                },
-                {
                     "label": "",
                     "icon": [
                         "fab",
                         "github"
                     ],
                     "url": "https://github.com/puterakahfi/refview-invest"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/refview-invest/"
                 }
             ]
         },
@@ -72,20 +72,20 @@
             "description": "My CV Landingpage, build with nuxtjs",
             "links": [
                 {
-                    "label": "link",
-                    "icon": [
-                        "fas",
-                        "link"
-                    ],
-                    "url": "https://puterakahfi.github.io/nuxt-awesome/"
-                },
-                {
                     "label": "",
                     "icon": [
                         "fab",
                         "github"
                     ],
                     "url": "https://github.com/puterakahfi/nuxt-awesome"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/nuxt-awesome/"
                 }
             ]
         },
@@ -94,20 +94,20 @@
             "description": "Course Landingpage, build with nuxtjs",
             "links": [
                 {
-                    "label": "link",
-                    "icon": [
-                        "fas",
-                        "link"
-                    ],
-                    "url": "https://puterakahfi.github.io/course-landingpage/"
-                },
-                {
                     "label": "",
                     "icon": [
                         "fab",
                         "github"
                     ],
                     "url": "https://github.com/puterakahfi/course-landingpage"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/course-landingpage/"
                 }
             ]
         },
@@ -116,20 +116,20 @@
             "description": "Codeigniter Indonesia website,build with gridsome, markdown",
             "links": [
                 {
-                    "label": "link",
-                    "icon": [
-                        "fas",
-                        "link"
-                    ],
-                    "url": "https://codeigniter-id.github.io/"
-                },
-                {
                     "label": "",
                     "icon": [
                         "fab",
                         "github"
                     ],
                     "url": "https://github.com/codeigniter-id/codeigniter-id.github.io"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://codeigniter-id.github.io/"
                 }
             ]
         }
