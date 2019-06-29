@@ -4,7 +4,7 @@
       <b-tab-item
         :label="item.label"
         :key="item.label"
-        v-for="item  in wakatime"
+        v-for="item  in data.items"
         :active="item.isActive"
         class="shadowless"
       >
@@ -16,15 +16,7 @@
 
 <script>
 export default {
-  data: function() {
-    return {};
-  },
-  computed: {
-    wakatime() {
-      // console.log(this.$store.state.wakatime.list);
-      return this.$store.state.wakatime.list;
-    }
-  }
+  props: ["data"]
 };
 </script>
 
