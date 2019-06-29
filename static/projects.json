@@ -11,7 +11,7 @@
                         "fab",
                         "github"
                     ],
-                    "url": "https://github.com/puterakahfi/nuxt-cv"
+                    "url": "https://github.com/puterakahfi/cv"
                 },
                 {
                     "label": "link",
@@ -19,7 +19,7 @@
                         "fas",
                         "link"
                     ],
-                    "url": "https://puterakahfi.github.io/nuxt-cv/"
+                    "url": "https://puterakahfi.github.io/cv/"
                 }
             ]
         },
