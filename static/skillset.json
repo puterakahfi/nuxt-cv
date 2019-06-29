@@ -3,21 +3,31 @@
     "items": [
         {
             "label": "Symfony Framework",
+            "url": "https://symfony.com",
             "level": "intermediate",
             "description": "description",
             "image": "https://img.icons8.com/color/344/symfony.png"
         },
         {
             "label": "NuxtJS",
+            "url":"https://nuxtjs.org",
             "level": "intermediate",
             "description": "description",
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png"
         },
         {
             "label": "Gridsome",
+            "url":"https://gridsome.org",
             "level": "intermediate",
             "description": "description",
             "image": "https://gridsome.org/logos/logo-circle-normal.svg"
+        },
+        {
+            "label": "Codeigniter Framework",
+            "url":"https://codeigniter.org",
+            "level": "intermediate",
+            "description": "description",
+            "image": "https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_codeigniter-512.png"
         }
     ]
 }
