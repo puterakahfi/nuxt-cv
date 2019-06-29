@@ -9,8 +9,8 @@
     "build": "nuxt build --no-lock",
     "start": "nuxt start",
     "generate": "nuxt generate --no-lock",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build --no-lock",
-    "predeploy": "DEPLOY_ENV=GH_PAGES nuxt generate --no-lock",
+    "deploy:gh-pages": "DEPLOY_ENV=GH_PAGES  push-dir --dir=dist --branch=gh-pages --cleanup",
+    "predeploy": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "deploy": "DEPLOY_ENV=GH_PAGES push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
@@ -29,7 +29,8 @@
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
     "vue-chartjs": "^3.4.2",
-    "vue-github-activity": "^2.1.1"
+    "vue-github-activity": "^2.1.1",
+    "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",

@@ -1,51 +1,55 @@
 <template>
   <section>
-    <section id="header" class>
+    <section id="header" v-scroll-reveal>
       <div class="container">
-        <Header :data="header" class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"/>
+        <Header
+          :data="header"
+          class="has-padding-top-50 has-margin-botton-50 has-padding-bottom-50"
+        />
       </div>
     </section>
 
-    <section class="has-padding-bottom-50">
+    <section class="has-padding-bottom-50" v-scroll-reveal>
       <div class="container">
         <div class="columns">
-          <div class="column is-7" id="section-skill">
+          <div class="column is-8" id="section-skill">
             <div class="titleunderline is-small"></div>
 
             <h2 class="title is-4 has-margin-bottom-20 is-light">{{projects.label}}</h2>
-
             <Projects :data="projects"/>
           </div>
-          <div class="column is-5">
+          <div class="column is-4">
+            <div class="titleunderline is-small"></div>
+            <h2 class="title is-4 has-margin-bottom-20 is-light">Skillset</h2>
+            <SkillsetCard :data="skillset"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="has-background-white has-padding-top-50 has-padding-bottom-50" v-scroll-reveal>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6" id="section-skill">
+            <Wakatime v-scroll-reveal/>
+          </div>
+          <div class="column is-6">
             <github-feed login="puterakahfi"></github-feed>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="has-background-white has-padding-top-50 has-padding-bottom-50">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-5" id="section-skill">
-            <Wakatime/>
-          </div>
-          <div class="column is-7">
-            <div class="titleunderline is-small"></div>
-            <h2 class="title is-4 has-margin-bottom-10 is-light">Skillset</h2>
-            <SkillsetCard :data="skillset" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
+    <footer class="footer" v-scroll-reveal>
       <div class="content has-text-centered">
         <p class="has-text-grey-light">
           <strong>CV Online</strong> by
           <a href="https://puterakahfi.github.io">Putera Kahfi</a>. The source code is licensed
           <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
           is licensed
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          <a
+            href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          >CC BY NC SA 4.0</a>.
         </p>
       </div>
     </footer>
@@ -59,12 +63,10 @@ import Projects from "~/components/Projects.vue";
 import Header from "~/components/Header.vue";
 import SkillsetCard from "~/components/SkillsetCard.vue";
 
-
 /* json data */
 import projects from "~/static/projects.json";
 import skillset from "~/static/skillset.json";
 import header from "~/static/header.json";
-
 
 export default {
   data: function() {
@@ -102,9 +104,8 @@ h1 {
 h4 {
   margin-bottom: 10px;
 
-  .title
-  {
-    color:#bebece;
+  .title {
+    color: #bebece;
   }
 }
 .card {
@@ -134,8 +135,7 @@ h4 {
   }
 }
 
-.is-light
-{
-  color:#bebece;
+.is-light {
+  color: #bebece;
 }
 </style>

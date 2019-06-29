@@ -4,7 +4,7 @@
       <div class="card has-equal-height">
         <div class="card-content has-padding-20">
           <h4 class="title is-5 has-margin-bottom-10">{{project.label}}</h4>
-          <p class="is-size-7 has-margin-bottom-15">{{ project.description }}</p>
+          <p class="is-size-6 has-text-grey has-margin-bottom-15">{{ project.description }}</p>
           <div class="buttons are-small">
             <a
               v-for="link in project.links"
@@ -33,8 +33,9 @@ export default {
 
 
 <style lang="scss" scoped>
-.card{
+.card {
   border-radius: 5px;
+  box-shadow: none;
 }
 </style>
 
