@@ -12,7 +12,7 @@ branches:
 
 install:
   - yarn install
-  - yarn generate
+  - yarn deploy
 
 script:
   - echo "Skipping tests"
