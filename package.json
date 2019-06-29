@@ -6,12 +6,12 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build --no-lock",
+    "build": "nuxt build ",
     "start": "nuxt start",
-    "generate": "nuxt generate --no-lock",
-    "deploy:gh-pages": "DEPLOY_ENV=GH_PAGES  push-dir --dir=dist --branch=gh-pages --cleanup",
-    "predeploy": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "DEPLOY_ENV=GH_PAGES push-dir --dir=dist --branch=gh-pages --cleanup"
+    "generate": "nuxt generate ",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build ",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate ",
+    "deploy:gh-pages": "DEPLOY_ENV=GH_PAGES push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.19",
@@ -23,15 +23,14 @@
     "bulma-helpers": "^0.3.8",
     "chart.js": "^2.8.0",
     "cross-env": "^5.2.0",
-    "node-sass": "^4.11.0",
-    "nuxt": "^2.4.0",
-    "nuxt-buefy": "^0.3.6",
-    "nuxt-fontawesome": "0.4.0",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.8.1",
+    "nuxt-buefy": "^0.3.8",
+    "nuxt-fontawesome": "0.4.1",
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
     "vue-chartjs": "^3.4.2",
-    "vue-github-activity": "^2.1.1",
-    "vue-scroll-reveal": "^1.0.11"
+    "vue-github-activity": "^2.1.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
