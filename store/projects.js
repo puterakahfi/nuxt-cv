@@ -7,7 +7,7 @@ export const state = () => ({
 
 export const mutations = {
     setProjects(state, projects) {
-        todo.projects = projects
+        state.projects = projects
     }
 }
 
@@ -19,7 +19,6 @@ export const getters = {
 export const actions = {
 
     fetchProjects({ commit }) {
-        alert(projectsData);
         commit('setProjects', projectsData);
     },
 }
