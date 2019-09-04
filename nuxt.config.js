@@ -22,24 +22,6 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: pkg.description }
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Roboto"
-      }
-    ],
-    script: [
-      {
-        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
-        type: "text/javascript"
-      }
     ]
   },
 
@@ -51,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/scss/main.scss"],
+  css: [],
 
   /*
    ** Plugins to load before mounting the App

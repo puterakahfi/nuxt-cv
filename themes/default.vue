@@ -15,7 +15,6 @@
           <div class="column is-7" id="section-skill" data-aos="fade-left">
             <div class="titleunderline is-small"></div>
 
-
             <Projects data-aos="zoom-out" />
           </div>
           <div class="column is-5" data-aos="fade-right">
@@ -70,7 +69,32 @@ import skillset from "~/static/skillset.json";
 import wakatime from "~/static/wakatime.json";
 import header from "~/static/header.json";
 
+
+import "~/assets/scss/main.scss";
+
 export default {
+  head() {
+    return {
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "stylesheet",
+          href:
+            "https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css?family=Roboto"
+        }
+      ],
+      script: [
+        {
+          src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+          type: "text/javascript"
+        }
+      ]
+    };
+  },
 
   data: function() {
     return {
