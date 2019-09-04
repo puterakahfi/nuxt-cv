@@ -1,5 +1,6 @@
 {
     "label": "Projects",
+    "isActive": true,
     "items": [
         {
             "label": "CV Online",
@@ -130,6 +131,28 @@
                         "link"
                     ],
                     "url": "https://codeigniter-id.github.io/"
+                }
+            ]
+        },
+        {
+            "label": "Awesome Javascript Developer Indonesia",
+            "description": "Indonesian javascript developers directory",
+            "links": [
+                {
+                    "label": "",
+                    "icon": [
+                        "fab",
+                        "github"
+                    ],
+                    "url": "https://github.com/puterakahfi/jsid"
+                },
+                {
+                    "label": "link",
+                    "icon": [
+                        "fas",
+                        "link"
+                    ],
+                    "url": "https://puterakahfi.github.io/jsid/"
                 }
             ]
         }

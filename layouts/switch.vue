@@ -1,6 +1,10 @@
 <template>
   <section>
-    <nuxt />
+    <div class="row">
+
+        PINDAH NIH SUDAH PAKE LAYOUT
+      <nuxt />
+    </div>
   </section>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="columns is-multiline">
-    <div class="column is-6" v-for="project in data.items" :key="project.label">
+    <div class="column is-6" v-for="project in allProjects" :key="project.label">
       <div class="card has-equal-height">
         <div class="card-content has-padding-20">
           <h4 class="title is-5 has-margin-bottom-10">{{project.label}}</h4>
@@ -13,7 +13,7 @@
               class="button is-white"
               target="_blank"
             >
-              <fa v-if="link.icon" :icon="[link.icon[0], link.icon[1]]"/>
+              <fa v-if="link.icon" :icon="[link.icon[0], link.icon[1]]" />
               &nbsp; {{ link.label }}
             </a>
           </div>
@@ -26,8 +26,15 @@
 
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
-  props: ["data"]
+  computed: {
+    ...mapGetters([{ allProjects: "projects/allProjects" }]),
+    getProjects: function() {
+      return this.$store.state.projects;
+    }
+  }
 };
 </script>
 

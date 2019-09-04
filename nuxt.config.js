@@ -60,13 +60,11 @@ export default {
     "~/plugins/vue-github-activity",
     { src: "~/plugins/aos", ssr: false }
   ],
-
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    "@nuxtjs/axios",
+  modules: [],
+  buildModules: [
     "nuxt-buefy",
+    "@nuxtjs/axios",
+    '@nuxtjs/tailwindcss',
     [
       "nuxt-fontawesome",
       {
@@ -93,6 +91,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };
