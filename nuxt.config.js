@@ -60,9 +60,9 @@ export default {
     "~/plugins/vue-github-activity",
     { src: "~/plugins/aos", ssr: false }
   ],
-  modules: ["nuxt-buefy",
+  modules: [
+    "nuxt-buefy",
     "@nuxtjs/axios",
-    '@nuxtjs/tailwindcss',
     [
       "nuxt-fontawesome",
       {
@@ -82,7 +82,7 @@ export default {
     ]
   ],
   buildModules: [
-
+    '@nuxtjs/tailwindcss'
   ],
 
   /*
