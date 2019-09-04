@@ -19,7 +19,7 @@
             <Projects data-aos="zoom-out" />
           </div>
           <div class="column is-5" data-aos="fade-right">
-            <github-feed login="puterakahfi"></github-feed>
+            <GithubFeed />
           </div>
         </div>
       </div>
@@ -64,6 +64,8 @@ import Projects from "~/components/Projects.vue";
 import Header from "~/components/Header.vue";
 import SkillsetCard from "~/components/SkillsetCard.vue";
 
+import GithubFeed from "~/components/GithubFeed.vue";
+
 import skillset from "~/static/skillset.json";
 import wakatime from "~/static/wakatime.json";
 import header from "~/static/header.json";
@@ -83,7 +85,8 @@ export default {
     Skillset,
     Projects,
     Header,
-    SkillsetCard
+    SkillsetCard,
+    GithubFeed
   }
 };
 </script>

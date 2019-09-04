@@ -33,10 +33,7 @@ import { mapActions, mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters({ allProjects: "projects/allProjects" }),
-    getProjects: function() {
-      return this.$store.state.projects;
-    }
+    ...mapGetters({ allProjects: "projects/allProjects" })
   },
 
   methods: {
