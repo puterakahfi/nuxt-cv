@@ -1,0 +1,44 @@
+{
+    "name": "Putera Kahfi",
+    "title": "Backend/Frontend Developer",
+    "images": [
+        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/web_developer_p3e5.svg",
+        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/professor_8lrt.svg",
+        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/code_review_l1q9.svg",
+        "https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/teaching_f1cm.svg"
+    ],
+    "links": [
+        {
+            "label": "facebook",
+            "icon": [
+                "fab",
+                "facebook"
+            ],
+            "url": "https://facebook.com/codejunior/"
+        },
+        {
+            "label": "github",
+            "icon": [
+                "fab",
+                "github"
+            ],
+            "url": "https://github.com/puterakahfi"
+        },
+        {
+            "label": "linkedin",
+            "icon": [
+                "fab",
+                "linkedin"
+            ],
+            "url": "https://www.linkedin.com/in/putera-kahfi-52663b48"
+        },
+        {
+            "label": "blog",
+            "icon": [
+                "fas",
+                "globe"
+            ],
+            "url": "https://puterakahfi.github.io"
+        }
+    ]
+}
